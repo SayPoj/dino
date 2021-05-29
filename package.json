@@ -1,0 +1,35 @@
+{
+  "name": "dino",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build:prod": "cross-env NODE_ENV=production  webpack --mode production",
+    "build:dev": "cross-env NODE_ENV=development  webpack --mode development",
+    "whatch:dev": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "whatch:prod": "cross-env NODE_ENV=production  webpack --mode production --watch",
+    "serve": "cross-env NODE_ENV=development  webpack serve  --mode development  --progress --open",
+    "firebase:deploy": "npm run build:prod && firebase deploy"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "*",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

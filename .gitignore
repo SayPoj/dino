@@ -1,0 +1,8 @@
+/.idea
+/.git
+package-lock.json
+/node_modules
+/dist
+.firebaserc
+firebase.json
+/.firebase
